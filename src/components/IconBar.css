@@ -1,0 +1,14 @@
+.IconBar {
+  display: flex;
+  height: 32px;
+  gap: 8px;
+}
+.IconBar svg {
+  fill: var(--color-1);
+  transition: all 0.3s;
+  scale: 1;
+}
+.IconBar svg:hover {
+  fill: var(--color-2);
+  scale: 1.2;
+}

@@ -1,0 +1,29 @@
+.WorkPage {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6em 2em;
+  text-align: left;
+}
+.WorkPage .container {
+  flex: 1;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.WorkPage .header {
+  align-self: flex-start;
+  position: fixed;
+  top: 48px;
+}
+.WorkPage h1 {
+  width: 100%;
+}
+.nextButton {
+  align-self: flex-end;
+}

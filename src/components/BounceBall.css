@@ -1,0 +1,40 @@
+#HeaderBounce-line {
+  stroke-dashoffset: 2000;
+  stroke-dasharray: 5, 2000;
+  animation: pathLine 5.6s infinite;
+  animation-timing-function: cubic-bezier(0.3, 0.84, 0.24, 1);
+  animation-delay: 3s;
+}
+#HeaderBounce-line:nth-child(2) {
+  stroke-dashoffset: 1400;
+  stroke-dasharray: 5, 1500;
+  animation-timing-function: cubic-bezier(0.3, 0.84, 0.24, 1);
+  animation: HeaderBounce-pathLine 2.5s infinite;
+  animation-delay: 5s;
+}
+
+@keyframes HeaderBounce-pathLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#HeaderBounce-ball {
+  animation: iddle 5.2s infinite ease-in-out;
+  animation-direction: alternate;
+  transform: translate(0px, -20px);
+}
+#HeaderBounce-ball:nth-child(4) {
+  transform: translate(-10px, 5px);
+  animation-duration: 4s;
+}
+#HeaderBounce-ball:nth-child(5) {
+  transform: translate(5px, 15px);
+  animation-duration: 3s;
+}
+
+@keyframes iddle {
+  to {
+    transform: translate(0px, 0px);
+  }
+}

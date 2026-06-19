@@ -1,0 +1,68 @@
+.LogoContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* max-height: 100vh; */
+  /* max-width: 100vh; */
+  /*min-width: 400px; */
+}
+
+/* --LINE --*/
+#DjmLogo #line {
+  stroke-dashoffset: 900;
+  stroke-dasharray: 50, 800;
+  animation: pathLine 2s forwards;
+  animation-timing-function: cubic-bezier(0.31, 0.45, 0.12, -0.02);
+  animation-delay: 0s;
+}
+
+@keyframes pathLine {
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+
+/* --LINE END --*/
+
+/* --BALLS */
+#DjmLogo .ball {
+  r: 0;
+  animation: ballsSpawn 0.2s forwards;
+  animation-timing-function: cubic-bezier(0.45, 1.26, 0.58, 1.6);
+}
+#DjmLogo .ball#b1 {
+  animation-delay: 0.1s;
+}
+#DjmLogo .ball#b2 {
+  animation-delay: 1.2s;
+}
+#DjmLogo .ball#b3 {
+  animation-delay: 1.6s;
+}
+#DjmLogo .ball#b4 {
+  animation-delay: 1.8s;
+}
+@keyframes ballsSpawn {
+  from {
+    r: 0;
+  }
+  to {
+    r: 10.4907;
+  }
+}
+/* --BALLS END */
+
+/* --LETTERS-- */
+#DjmLogo #circleMask {
+  animation: ShowLetters 0.4s forwards;
+  animation-timing-function: cubic-bezier(0.55, 0.1, 0.84, 0.53);
+  animation-delay: 1.7s;
+}
+
+@keyframes ShowLetters {
+  to {
+    r: 340;
+  }
+}

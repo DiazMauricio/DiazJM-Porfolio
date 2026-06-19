@@ -1,0 +1,41 @@
+.AboutBounce {
+  height: auto;
+  max-width: 1200px;
+}
+
+#AboutLine {
+  stroke-dashoffset: 4400;
+  stroke-dasharray: 5, 4395;
+  animation: pathLine 7s infinite;
+  animation-timing-function: cubic-bezier(0.32, 0.41, 0.34, 0.07);
+  animation-delay: 0s;
+}
+
+.AboutCircle {
+  animation: iddle 2s infinite ease-in-out;
+  animation-direction: alternate;
+  transform: translate(0px, -5px);
+}
+.AboutCircle:nth-child(2n) {
+  transform: translate(6px, -2px);
+  animation-delay: 3.1s;
+}
+.AboutCircle:nth-child(3n + 2) {
+  transform: translate(-6px, 3px);
+  animation-delay: 1.8s;
+}
+.AboutCircle:nth-child(4n-3) {
+  transform: translate(3px, 6px);
+  animation-delay: 3.6s;
+}
+
+@keyframes pathLine {
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+@keyframes iddle {
+  to {
+    transform: translate(0px, 0px);
+  }
+}
